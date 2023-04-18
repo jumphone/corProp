@@ -73,7 +73,7 @@ corProp <- function( REF, BULK, S1=1, S2=10, N=1000, SEED=123){
    print('dim(REF):')
    print(dim(REF))
    print('dim(BULK):')
-   print(dim(REF))
+   print(dim(BULK))
    print('dim(COM):')
    print(dim(COM$combine))
    ##############################
