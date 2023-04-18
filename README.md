@@ -8,7 +8,7 @@ step 1. estimate proportions of cell types
     
     source('https://raw.githubusercontent.com/jumphone/corProp/main/corProp.R')
     
-    OUT=corProp(REF,BULK)
+    OUT=corProp(REF, BULK, S1=10, S2=10, N=1000, SEED=123, ROUND=3)
      
 
 step 2. draw heatmap
