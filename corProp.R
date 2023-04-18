@@ -37,13 +37,14 @@
     }
     
 
-corProp <- function( REF, BULK, S1=1, S2=10, N=1000, SEED=123){
+corProp <- function( REF, BULK, S1=1, S2=10, N=1000, SEED=123, ROUND=3){
    REF=REF
    BULK=BULK
    SHAPE1=S1
    SHAPE2=S2
    N=N
    SEED=SEED
+   ROUND=ROUND
    ##############################
    print('beta shape1:')
    print(SHAPE1)
@@ -87,9 +88,10 @@ corProp <- function( REF, BULK, S1=1, S2=10, N=1000, SEED=123){
        i=i+1}
    ##############################
    PNCOR=NCOR/rowSums(NCOR) *100
+   OUT=round(PNCOR,ROUND)
    ##############################
    print('finished!')
-   return(PNCOR)
+   return(OUT)
    }    
     
     
