@@ -37,7 +37,7 @@
     }
     
 
-corProp <- function( REF, BULK, S1=1, S2=10, N=1000, SEED=123, ROUND=3){
+corProp <- function( REF, BULK, S1=10, S2=10, N=1000, SEED=123, ROUND=3){
    REF=REF
    BULK=BULK
    SHAPE1=S1
