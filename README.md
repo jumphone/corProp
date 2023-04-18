@@ -2,6 +2,8 @@
 
 Use the correlation between expression profiles to estimate the composition of mixed expression profile
 
+# Usage:
+
 Estimate proportions of cell types
     
     source('https://raw.githubusercontent.com/jumphone/corProp/main/corProp.R')
