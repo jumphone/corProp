@@ -45,13 +45,13 @@ corProp <- function( REF, BULK, S1=1, S2=10, N=1000, SEED=123){
    N=N
    SEED=SEED
    ##############################
-   print('Beta shape1:')
+   print('beta shape1:')
    print(SHAPE1)
-   print('Beta shape2:')
+   print('beta shape2:')
    print(SHAPE2)
-   print('Number of random bdg:')
+   print('number of random bdg:')
    print(N)
-   print('Seed:')
+   print('seed:')
    print(SEED)
    ##############################
    print('building random background...')
