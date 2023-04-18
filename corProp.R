@@ -37,17 +37,26 @@
     }
     
 
-corProp <- function( REF, BULK, S1=1, S2=10, TIME=1000, SEED=123){
+corProp <- function( REF, BULK, S1=1, S2=10, N=1000, SEED=123){
    REF=REF
    BULK=BULK
    SHAPE1=S1
    SHAPE2=S2
-   TIME=TIME
+   N=N
    SEED=SEED
+   ##############################
+   print('Beta shape1:')
+   print(SHAPE1)
+   print('Beta shape2:')
+   print(SHAPE2)
+   print('Number of random bdg:')
+   print(N)
+   print('Seed:')
+   print(SEED)
    ##############################
    print('building random background...')
    set.seed(SEED)
-   BKG=matrix(0,ncol=TIME,nrow=nrow(REF))
+   BKG=matrix(0,ncol=N,nrow=nrow(REF))
    rownames(BKG)=rownames(REF)
    colnames(BKG)=paste0('BKG',c(1:ncol(BKG)))
    i=1
@@ -60,6 +69,13 @@ corProp <- function( REF, BULK, S1=1, S2=10, TIME=1000, SEED=123){
    COR=cor(COM$exp_sc_mat1, COM$exp_sc_mat2)
    COM.BKG=.simple_combine(BULK, BKG)
    COR.BKG=cor(COM.BKG$exp_sc_mat1, COM.BKG$exp_sc_mat2)
+   ##############################
+   print('dim(REF):')
+   print(dim(REF))
+   print('dim(BULK):')
+   print(dim(REF))
+   print('dim(COM):')
+   print(dim(COM$combine))
    ##############################
    print('estimating proportion...')
    PCOR=COR
