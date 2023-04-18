@@ -4,14 +4,14 @@ Use the correlation between expression profiles to estimate the composition of m
 
 # Usage:
 
-Estimate proportions of cell types
+step 1. estimate proportions of cell types
     
     source('https://raw.githubusercontent.com/jumphone/corProp/main/corProp.R')
     
     OUT=corProp(REF,BULK)
      
 
-Draw heatmap
+step 2. draw heatmap
      
     library('ComplexHeatmap')
     library('circlize')
