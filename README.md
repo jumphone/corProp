@@ -2,9 +2,14 @@
 
 Use the correlation between expression profiles to estimate the composition of mixed expression profile
 
+Estimate proportions of cell types
+    
     source('https://raw.githubusercontent.com/jumphone/corProp/main/corProp.R')
-
+    
     OUT=corProp(REF,BULK)
+     
+
+Draw heatmap
      
     library('ComplexHeatmap')
     library('circlize')
